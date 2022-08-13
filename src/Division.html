@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/src/output.css">
+  <link rel="stylesheet" href="https://thomasvillafranco.github.io/src/output.css">
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="https://kit.fontawesome.com/cc6c784dc6.js" crossorigin="anonymous"></script>
+  <script defer src="/src/assets/division.js"> </script>
+</head>
+
+<body class="">
+  <nav x-data="{ open: false }" class="fixed z-10 w-full  px-2 bg-secondary text-white flex justify-between items-center">
+    <div><img class=" h-14 pr-2 py-1 md:cursor-pointer" src="./assets/img/icons/TCTD2_Icon_Phoenix_Primary_Orange.png" alt="" /></div>
+    <ul class="flex flex-col fixed z-10 rounded-lg  bg-black w-auto pb-4 ml-4 my-4 pl-4 pr-2 pt-6 right-0 top-6 " x-show="open">
+      <li class="px-2 py-2"><a href="index.html" class="hover:text-primary md:cursor-pointer">Call</a></li>
+      <li class="px-2 py-2"><a href="Division.html" class="hover:text-primary md:cursor-pointer" 
+        >The Division</a></li>
+      <li class="px-2 py-2"><a href="division2.html" class="hover:text-primary md:cursor-pointer"
+        >The Division 2</a></li>    
+    </ul>
+    <div class=" text-4xl pr-2" @click="open = ! open">≡</div>
+  </nav>
+  <div class=" bg-white ">
+    <div class>
+      <div class="bg-cover bg-no-repeat bg-top">
+        <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
+          src="./assets/img/backgound/TD.jpg" alt>
+      </div>
+    </div>
+
+
+
+    <div class="bg-white">
+      <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+        <h2 class="text-2xl font-extrabold tracking-tight text-gray-900">Official Launch Trailers</h2>
+        <div class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8" id="content">
+          <!-- content -->
+          <div class="group relative">
+            <div
+              class="w-full bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:aspect-none">
+              <img src="" alt="" class="w-full">
+            </div>
+            <div class="mt-4 flex justify-between">
+              <h3 class="text-sm text-gray-700">
+                <span aria-hidden="true" class="absolute inset-0"></span>
+                title
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="relative py-2 pl-4 bottom-0 w-full bg-secondary text-white">
+      <div class="md:flex justify-around">
+        <div class="mt-4 mb-4 md:">
+          <div>
+            <a href="https://www.youtube.com/" class="hover:text-primary">
+              <i class="fa-brands fa-youtube"></i> Youtube </a>
+          </div>
+          <div>
+            <a href="https://github.com/" class="hover:text-primary">
+              <i class="fa-brands fa-github"></i> Github </a>
+          </div>
+          <div>
+            <a href="https://discord.com/" class="hover:text-primary">
+              <i class="fa-brands fa-discord"></i> TH_Greed#2471 </a>
+          </div>
+
+        </div>
+        <div class="ml-8 mt-10"> Powered By Ricardo Thomas López Martínez </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

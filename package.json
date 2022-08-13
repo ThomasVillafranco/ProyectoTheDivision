@@ -1,0 +1,30 @@
+{
+  "name": "proyecto-1",
+  "version": "1.0.0",
+  "description": "This is mi first project using JavaScript, Tailwind CSS y HTML5",
+  "main": "index.html",
+  "scripts": {
+    "build": "npx tailwindcss -i ./css/input.css -o ./src/output.css --watch",
+    "deploy": "gh-pages -d src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThomasVillafranco/Proyecto-1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThomasVillafranco/Proyecto-1/issues"
+  },
+  "homepage": "https://github.com/ThomasVillafranco/Proyecto-1#readme",
+  "dependencies": {
+    "glob": "^8.0.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.8",
+    "gh-pages": "^4.0.0",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8"
+  }
+}

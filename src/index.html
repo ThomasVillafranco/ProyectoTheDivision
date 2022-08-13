@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="src/output.css">
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="https://kit.fontawesome.com/cc6c784dc6.js" crossorigin="anonymous"></script>
+</head>
+<body class="">
+  <nav x-data="{ open: false }" class="nav-bar">
+    <div><img class="h-14 pr-2 py-1 md:cursor-pointer" src="./assets/img/icons/TCTD2_Icon_Phoenix_Primary_Orange.png" alt="" /></div>
+    <ul class="flex flex-col fixed z-10 rounded-lg  bg-black w-auto pb-4 ml-4 my-4 pl-4 pr-2 pt-6 right-0 top-6 " x-show="open">
+      <li class="px-2 py-2"><a href="index.html" class="hover:text-primary md:cursor-pointer">Call</a></li>
+      <li class="px-2 py-2"><a href="Division.html" class="hover:text-primary md:cursor-pointer" 
+        >The Division</a></li>
+      <li class="px-2 py-2"><a href="division2.html" class="hover:text-primary md:cursor-pointer"
+        >The Division 2</a></li>    
+    </ul>
+    <div class=" text-4xl pr-2" @click="open = ! open">≡</div>
+  </nav>
+  <main>
+    <div class="h-12">
+    </div>
+    <div class="h-44 md:h-100 bg-cover bg-no-repeat bg-top" style="background-image:url('https://i.pinimg.com/originals/8d/96/72/8d9672c9338f36d99f5e785f62b06bb3.jpg')"></div>
+    </div>
+    <div class="container mx-auto text-2xl">
+      <div>
+        <div class=" mt-4 md:flex md:items-center">
+          <div class>
+            <img class="rounded-lg w-70 " src="./assets/img/cards/TCTD_conceptart_Contagion.jpg" alt="" />
+          </div>
+          <div class="relative ml-2 ">
+            <p class=" md:hover:text-primary">
+              We used to be ordinary people with ordinary lives,
+              trained in secret only to be activated if the worst happened. </p>
+          </div>
+        </div>
+        <div class=" mt-4 md:flex flex-row-reverse md:items-center">
+          <div class>
+            <img class="rounded-lg w-70" src="./assets/img/cards/TCTD_ConcepArt_Cleaners.jpg" alt="" />
+          </div>
+          <div class="relative ml-2 ">
+            <p class="narrative  md:hover:text-primary">Three years ago that day
+              came...
+              Dark forces are moving to take control of our nation and we are the only hope to stop it.
+            </p>
+          </div>
+        </div>
+        <div class=" mt-4 md:flex md:items-center md:mb-2 ">
+          <div class>
+            <img class="rounded-lg w-70 " src="./assets/img/cards/TCTD_December_NewYear.jpg" alt="" />
+          </div>
+          <div class="relative ml-2  ">
+            <p class=" narrative  md:hover:text-primary">
+              This is a call for those agents that are still active,
+              I am TH_Greed and I want to create an attack force to recover DC from the hands of the
+              factions that terrorize it, I'm looking for 3 committed agents to face the hardest missions,
+              if you want to be part of this elite team look for me in DC.
+            </p></div>
+        </div>
+      </div>
+    </div></main>
+  <footer class="relative py-2 pl-4 bottom-0 w-full bg-secondary text-white">
+    <div class="md:flex justify-between md:px-4">
+      <div class="mt-4 mb-4 md:" >
+<div>
+  <a href="https://www.youtube.com/"class="hover:text-primary">
+  <i class="fa-brands fa-youtube"></i> Youtube </a>
+</div>      
+<div>
+  <a href="https://github.com/"class="hover:text-primary">
+  <i class="fa-brands fa-github"></i> Github </a>
+</div>
+<div>
+  <a href="https://discord.com/"class="hover:text-primary">
+  <i class="fa-brands fa-discord"></i> TH_Greed#2471 </a>
+</div>
+  
+      </div>
+      <div class="ml-8 mt-10"> Powered By Ricardo Thomas López Martínez </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
